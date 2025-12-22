@@ -1,2 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  background-color: #fffdf3;
+}
+
+/* navigation bar */
+nav {
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 120px;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+}
+
 body {
+  margin-top: 80px;
 }
