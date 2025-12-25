@@ -32,24 +32,32 @@
 
     <form action="">
       <div class="form-title">
-        <h3>Masuk ke Akun</h3>
+        <h1>Masuk ke Akun</h1>
         <p>Yuk, lanjutin belajarmu di videobelajar.</p>
       </div>
       <div class="form-input">
-        <label for="email">Email *</label>
+        <label for="email">Email<span>*</span></label>
         <input type="email" name="email" id="email" required />
-        <label for="password">Kata Sandi *</label>
-        <input type="password" id="password" name="password" /><i
-          class="fa-solid fa-eye"
-        ></i>
-        <a href="#">Lupa Password?</a>
-        <button>Daftar</button>
-        <button>Masuk</button>
-        <p>atau</p>
-        <button>
-          <img src="assets/logos_google-icon.png" alt="google-icon" />Daftar
-          dengan Google
-        </button>
+        <label for="password">Kata Sandi<span>*</span></label>
+
+        <div class="password-field">
+          <input type="password" id="password" name="password" /><i
+            class="fa-solid fa-eye"
+          ></i>
+        </div>
+
+        <a href="#" class="forget-password">Lupa Password?</a>
+        <div class="register-login-button">
+          <button id="button-sign-up">Daftar</button>
+          <button id="button-login">Masuk</button>
+          <p>atau</p>
+          <button id="button-sso-google">
+            <div class="google-icon">
+              <img src="assets/logos_google-icon.png" alt="google-icon" />
+            </div>
+            <span>Daftar dengan Google</span>
+          </button>
+        </div>
       </div>
     </form>
   </body>

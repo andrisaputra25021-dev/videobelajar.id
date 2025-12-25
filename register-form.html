@@ -24,50 +24,64 @@
   <body>
     <header>
       <nav>
-        <a href="#" id="logo"
+        <a href="#home" id="logo"
           ><img src="assets/Logo.png" alt="videobelajar-logo"
         /></a>
       </nav>
     </header>
 
-    <form action="">
-      <div class="form-title">
-        <h3>Pendaftaran Akun</h3>
-        <p>Yuk, daftarkan akunmu sekarang juga!</p>
-      </div>
-      <div class="form-input">
-        <label for="name">Nama Lengkap *</label>
-        <input type="text" name="name" id="name" required />
-        <label for="email">Email *</label>
-        <input type="email" name="email" id="email" required />
-        <label for="phone">No. HP *</label>
-        <input type="tel" name="phone" id="phone" required />
-
-        <div class="phone-input">
-          <div class="country-code">
-            <img src="assets/flag-id.png" alt="ID" /><span>+62</span>
-          </div>
-          <i class="fa-solid fa-chevron-down"></i>
-          <input type="tel" required />
+    <section>
+      <form action="">
+        <div class="form-title">
+          <h1>Pendaftaran Akun</h1>
+          <p>Yuk, daftarkan akunmu sekarang juga!</p>
         </div>
+        <div class="form-input">
+          <label for="name">Nama Lengkap<span>*</span></label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email<span>*</span></label>
+          <input type="email" name="email" id="email" required />
+          <label for="phone">No. HP<span>*</span></label>
 
-        <label for="password">Kata Sandi *</label>
-        <input type="password" id="password" name="password" /><i
-          class="fa-solid fa-eye"
-        ></i>
-        <label for="password">konfirmasi Kata Sandi *</label>
-        <input type="password" id="password" name="password" /><i
-          class="fa-solid fa-eye"
-        ></i>
-        <a href="#">Lupa Password?</a>
-        <button>Daftar</button>
-        <button>Masuk</button>
-        <p>atau</p>
-        <button>
-          <img src="assets/logos_google-icon.png" alt="google-icon" />Daftar
-          dengan Google
-        </button>
-      </div>
-    </form>
+          <div class="country-phone">
+            <div class="country-code">
+              <img src="assets/flag-id.png" alt="ID" /><span>+62</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <input type="tel" name="phone" id="phone" required />
+          </div>
+          <label for="password">Kata Sandi<span>*</span></label>
+
+          <div class="password-field">
+            <input type="password" id="password" name="password" /><i
+              class="fa-solid fa-eye"
+            ></i>
+          </div>
+
+          <label for="password">konfirmasi Kata Sandi<span>*</span></label>
+
+          <div class="password-field">
+            <input type="password" id="password" name="password" /><i
+              class="fa-solid fa-eye"
+            ></i>
+          </div>
+
+          <a href="#" class="forget-password">Lupa Password?</a>
+
+          <div class="register-login-button">
+            <button id="button-sign-up">Daftar</button>
+            <button id="button-login">Masuk</button>
+            <p>atau</p>
+            <button id="button-sso-google">
+              <div class="google-icon">
+                <img src="assets/logos_google-icon.png" alt="google-icon" />
+              </div>
+              <span>Daftar dengan Google</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
