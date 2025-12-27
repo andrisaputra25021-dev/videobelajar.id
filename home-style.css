@@ -196,6 +196,9 @@ nav #category {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+  display: box;
+  line-clamp: 2;
 }
 
 .mentor-profile img {
@@ -234,4 +237,128 @@ nav #category {
   color: #3ecf4c;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/* section CTA */
+#container-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+
+.cta-content {
+  background-image: url(assets/background-home-intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: multiply;
+  border-radius: 10px;
+  padding: 3rem 10rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.cta-content p {
+  font-size: 1rem;
+}
+
+.cta-content h1 {
+  font-size: 3rem;
+}
+
+.cta-input {
+  position: relative;
+  width: 50%;
+}
+.cta-input input {
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cta-input button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ffbd3a;
+  border: none;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cta-input button:hover {
+  background-color: #3ecf4c;
+}
+
+/* section footer */
+footer {
+  background-color: #ffffff;
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+  padding: 2rem 4rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-left p {
+  font-weight: 700;
+}
+
+.footer-content-right {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-content-right p {
+  font-weight: 700;
+}
+
+.footer-content-right li {
+  list-style-type: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.footer-content-right li a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.copyright-and-medsos {
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.medsos-icon ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.medsos-icon ul a {
+  color: rgba(0, 0, 0, 0.75);
+  border: solid 3px rgba(0, 0, 0, 0.25);
+  padding: 0.25rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
