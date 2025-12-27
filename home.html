@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="video learning platform" />
     <meta name="keywords" content="videobelajar" />
-    <meta name="author" content="andri-saputra" />
+    <meta name="author" content="andri saputra" />
     <meta name="theme-colour" content="#FFBD3A" />
     <link
       rel="icon"
@@ -24,11 +24,13 @@
   <body>
     <header>
       <nav>
-        <a href="#home" id="logo">
-          <img src="assets/Logo.png" alt="videobelajar-logo"
-        /></a>
+        <div class="container-logo">
+          <a href="#home" id="logo">
+            <img src="assets/Logo.png" alt="videobelajar-logo"
+          /></a>
+        </div>
 
-        <div class="navbar-home-content">
+        <div class="navbar-home">
           <a href="#" id="category">Kategori</a>
           <a href="#" id="profile"
             ><img src="assets/Avatar.png" alt="Profile Picture"
@@ -37,231 +39,335 @@
       </nav>
     </header>
 
-    <section id="introduction">
-      <div class="intro">
+    <section id="container-intro">
+      <div class="intro-content">
         <h1>
           Revolusi Pembelajaran: Temukan ilmu Baru Melalui Platform Video
           interaktif!
         </h1>
-        <h2>
+        <p>
           Temukan ilmu baru yang menarik dan mendalam melalui koleksi video
           pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat
           berpartisipasi dalam latihan interaktif yang akan meningkatkan
           pemahaman Anda.
-        </h2>
-        <a href="#">Temukan video course untuk dipelajari!</a>
-      </div>
-
-      <div class="heading-video-collection">
-        <h1>Koleksi Video Pembelajaran Unggulan</h1>
-        <p>Jelajahi dunia pengetahuan melalui pilihan kami!</p>
+        </p>
+        <a href="#container-video-list"
+          >Temukan video course untuk dipelajari!</a
+        >
       </div>
     </section>
 
-    <section class="video-collection">
-      <ul>
-        <li><a href="#">Semua Kelas</a></li>
-        <li><a href="#">Pemasaran</a></li>
-        <li><a href="#">Desain</a></li>
-        <li><a href="#">Pengembangan Diri</a></li>
-        <li><a href="#"></a>Bisnis</li>
-      </ul>
+    <section id="container-video-list">
+      <div class="heading-video-list">
+        <h1>Koleksi Video Pembelajaran Unggulan</h1>
+        <p>Jelajahi dunia pengetahuan melalui pilihan kami!</p>
+      </div>
 
-      <div class="list-video-collection">
+      <div class="menu">
+        <ul>
+          <li><a href="#">Semua Kelas</a></li>
+          <li><a href="#">Pemasaran</a></li>
+          <li><a href="#">Desain</a></li>
+          <li><a href="#">Pengembangan Diri</a></li>
+          <li><a href="#">Bisnis</a></li>
+        </ul>
+      </div>
+
+      <div div class="list-video-card">
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
+
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
         </div>
+
         <div class="video-card">
+          <div class="box-img-card">
+            <img src="assets/background-home-intro.jpg" alt="Course-photo" />
+          </div>
           <h1>Big 4 Auditor Financial Analyst</h1>
-          <p>
+          <p class="video-info">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             recusandae suscipit, doloribus porro nesciunt sunt, vero beatae unde
             eaque, dolore voluptas nulla amet ipsam est at! Modi ipsa neque
             quis!
           </p>
-          <div>
-            <img src="#" alt="Mentor Profile" />
-            <h3 class="mentor-name">Jenna Ortega</h3>
-            <p class="mentor-background">
-              Senior Accountant di <span>Gojek</span>
-            </p>
+          <div class="mentor-profile">
+            <div class="box-mentor-profile">
+              <img src="assets/Avatar.png" alt="Mentor Profile" />
+            </div>
+            <div class="mentor-name">
+              <h4>Jenna Ortega</h4>
+              <p>Senior Accountant di <span>Gojek</span></p>
+            </div>
           </div>
           <div class="rating-and-cost">
             <div class="rating">
-              <img src="" alt="rating oint" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>5 (100)</span>
             </div>
             <p class="cost-course">RP 300K</p>
           </div>
