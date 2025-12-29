@@ -20,6 +20,11 @@ section {
 }
 
 /* navigation bar */
+
+nav #menu {
+  display: none;
+}
+
 nav {
   top: 0;
   background-color: #ffffff;
@@ -32,6 +37,10 @@ nav {
   height: 5rem;
   position: fixed;
   border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+}
+
+.container-logo img {
+  width: 100%;
 }
 
 .navbar-home {
@@ -69,6 +78,7 @@ nav #category {
   align-items: center;
   text-align: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .intro-content h1 {
@@ -117,16 +127,17 @@ nav #category {
   font-size: 1rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
 }
 
-.menu ul {
+.category-video ul {
   display: flex;
   list-style: none;
   gap: 2rem;
   padding: 0.5rem 0;
 }
 
-.menu ul li a {
+.category-video ul li a {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -136,7 +147,7 @@ nav #category {
   transition: all 0.25s ease-in;
 }
 
-.menu a:hover {
+.category-video a:hover {
   color: #f64920;
   border-bottom-color: #f64920;
 }
@@ -208,6 +219,8 @@ nav #category {
 
 .mentor-profile {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -254,7 +267,7 @@ nav #category {
   background-color: rgba(0, 0, 0, 0.9);
   background-blend-mode: multiply;
   border-radius: 10px;
-  padding: 3rem 10rem;
+  padding: 3rem;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -262,6 +275,7 @@ nav #category {
   align-items: center;
   text-align: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .cta-content p {
@@ -324,6 +338,10 @@ footer {
   gap: 3rem;
 }
 
+.footer-headlist i {
+  display: none;
+}
+
 .footer-content-right p {
   font-weight: 700;
 }
@@ -352,7 +370,7 @@ footer {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .medsos-icon ul a {
@@ -361,4 +379,124 @@ footer {
   padding: 0.25rem;
   border-radius: 50%;
   cursor: pointer;
+}
+
+/* Responsive */
+@media (min-width: 1440px) {
+  html {
+    font-size: 135%;
+  }
+  .list-video-card {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 80%;
+  }
+  .video-info {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 70%;
+  }
+  .container-logo img {
+    width: 55%;
+  }
+
+  .navbar-home {
+    display: none;
+  }
+  nav #menu {
+    display: flex;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 2.5rem;
+  }
+  .category-video {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem;
+  }
+  .category-video ul {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+  .list-video-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .video-card {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    grid-template-areas:
+      "image title"
+      "image mentor"
+      "rating rating";
+    gap: 0.5rem;
+  }
+  .box-img-card {
+    grid-area: image;
+  }
+  .video-card h1 {
+    grid-area: title;
+  }
+  .mentor-profile {
+    grid-area: mentor;
+  }
+  .rating-and-cost {
+    grid-area: rating;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cta-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .cta-input button {
+    position: static;
+    transform: none;
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+  .footer-content {
+    display: inline-block;
+  }
+  .footer-content-left div img {
+    width: 50%;
+  }
+  .footer-content-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+  }
+  #category-list,
+  #about-company,
+  #community-side {
+    display: none;
+  }
+
+  .footer-headlist i {
+    display: flex;
+  }
+  .footer-headlist {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright-and-medsos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
 }

@@ -25,7 +25,7 @@
     <header>
       <nav>
         <div class="container-logo">
-          <a href="#home" id="logo">
+          <a href="home.html" id="logo">
             <img src="assets/Logo.png" alt="videobelajar-logo"
           /></a>
         </div>
@@ -36,6 +36,7 @@
             ><img src="assets/Avatar.png" alt="Profile Picture"
           /></a>
         </div>
+        <a id="menu"><i class="fa-solid fa-bars"></i></a>
       </nav>
     </header>
 
@@ -63,7 +64,7 @@
         <p>Jelajahi dunia pengetahuan melalui pilihan kami!</p>
       </div>
 
-      <div class="menu">
+      <div class="category-video">
         <ul>
           <li><a href="#">Semua Kelas</a></li>
           <li><a href="#">Pemasaran</a></li>
@@ -73,7 +74,7 @@
         </ul>
       </div>
 
-      <div div class="list-video-card">
+      <div class="list-video-card">
         <div class="video-card">
           <div class="box-img-card">
             <img src="assets/background-home-intro.jpg" alt="Course-photo" />
@@ -381,11 +382,17 @@
         <h1>Mau Belajar Lebih Banyak?</h1>
         <p>
           Daftarkan dirimu untuk dapat informasi terbaru dan penawaran spesial
-          dari program-program terbaik <span>videobelajar.id</span>
+          dari program-program terbaik
+          <span><strong>videobelajar.id</strong></span>
         </p>
 
         <div class="cta-input">
-          <input type="email" name="email" id="email" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Masukkan Emailmu"
+          />
           <button type="submit">Subcribe</button>
         </div>
       </div>
@@ -395,7 +402,9 @@
       <div class="footer-content">
         <div class="footer-content-left">
           <div>
-            <img src="assets/Logo.png" alt="videobelajar-logo" />
+            <a href="home.html"
+              ><img src="assets/Logo.png" alt="videobelajar-logo"
+            /></a>
           </div>
           <p>
             Gali potensi anda melalui pembelajaran video di videobelajar.id!
@@ -406,8 +415,11 @@
 
         <div class="footer-content-right">
           <div>
-            <p>Kategori</p>
-            <ul>
+            <p class="footer-headlist">
+              Kategori<span><i class="fa-solid fa-chevron-right"></i></span>
+            </p>
+
+            <ul id="category-list">
               <li><a href="#">Digital & Teknologi</a></li>
               <li><a href="#">Pemasaran</a></li>
               <li><a href="#">Managemen Bisnis</a></li>
@@ -417,8 +429,10 @@
           </div>
 
           <div>
-            <p>Perusahaan</p>
-            <ul>
+            <p class="footer-headlist">
+              Perusahaan <span><i class="fa-solid fa-chevron-right"></i></span>
+            </p>
+            <ul id="about-company">
               <li><a href="#">Tentang Kami</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Kebijakan Privasi</a></li>
@@ -428,8 +442,10 @@
           </div>
 
           <div>
-            <p>Komunitas</p>
-            <ul>
+            <p class="footer-headlist">
+              Komunitas <span><i class="fa-solid fa-chevron-right"></i></span>
+            </p>
+            <ul id="community-side">
               <li><a href="#">Tips Sukses</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
