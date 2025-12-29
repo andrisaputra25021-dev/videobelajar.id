@@ -172,3 +172,36 @@ input {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+/* responsive */
+@media (min-width: 1440px) {
+  html {
+    font-size: 135%;
+  }
+  form {
+    margin: 5rem 20rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 70%;
+  }
+  nav img {
+    width: 70%;
+    display: flex;
+  }
+
+  nav {
+    padding-left: 1.5rem;
+  }
+  form {
+    margin: 2rem 1.5rem;
+  }
+}
